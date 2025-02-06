@@ -54,6 +54,6 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: | 
-             ${{ secrets.REGISTRY_USERNAME }}/fastapi-CI-CD-alvarog:latest
-             ${{ secrets.REGISTRY_USERNAME }}/fastapi-CI-CD-alvarog:${{ env.VERSION }}
+             ${{ secrets.REGISTRY_USERNAME }}/fastapi-ci-cd-alvarog:latest
+             ${{ secrets.REGISTRY_USERNAME }}/fastapi-ci-cd-alvarog:${{ env.VERSION }}
             
