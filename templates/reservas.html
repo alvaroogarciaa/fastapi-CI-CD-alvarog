@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Reserva en Come y Calla{% endblock %}
+
+{% block content %}
+    <h1>Realiza tu Reserva</h1><a href="/clientes">CLIENTES DE COME Y CALLA</a>
+<div class="div-form">
+    
+    <form class="formulario" method="post" action="/reservar">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required><br><br>
+
+        <button type="submit">Confirmar Reserva</button>
+    </form>
+    
+</div>
+<div class="video-section">
+    <div class="video-container">
+        <h2>RESUMEN DE COME Y CALLA</h2>
+        <iframe width="50%" height="315" src="https://www.youtube-nocookie.com/embed/eq_buNz1lio?si=a9-K4wrGDVFj9yC9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+{% endblock %}
